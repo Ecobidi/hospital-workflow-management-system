@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/app.css" type="text/css" />
+  <title>Hospital Workflow Management System</title>
+</head>
+<body style="background: url(/images/bg.jpg) no-repeat center center; background-size: cover;">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success">
+    <div class="d-flex align-items-center">
+      <h4 class="text-white">
+        <span class="title">Hospital Workflow </span>
+        <span class="lead">Management System</span>
+      </h4>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <aside class="col-lg-2 sidenav" style="min-height: 70vh;">
+        <div class="d-flex align-items-center my-2 mb-4 p-2">
+          <div>
+            <span>Welcome</span><br>
+            <p class="lead"><%= user.username.toUpperCase()  %></p>
+          </div>
+        </div>
+
+        <ul class="list-group">
+          <a href="/" class="list-group-item mb-2 bg-primary text-white">
+            <i class="fa fa-dashboard" aria-hidden="true"></i> 
+            <span>Dashboard</span>
+          </a>
+          <a href="/medical-reports" class="list-group-item mb-2 bg-danger text-white">
+            <i class="fa fa-list-alt" aria-hidden="true"></i> <span>Medical Reports</span>
+          </a>
+          <a href="/patients" class="list-group-item mb-2 bg-warning">
+            <i class="fa fa-users" aria-hidden="true"></i> <span>Patients</span>
+          </a>
+          <a href="/doctors" class="list-group-item mb-2 bg-info text-white">
+            <i class="fa fa-medkit" aria-hidden="true"></i> <span>Doctors</span>
+          </a>
+          <a href="/users" class="list-group-item mb-2 text-white" style="background-color: #6f42c1;">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i> <span>Users</span>
+          </a>
+          <a href="/logout" class="list-group-item mb-2 bg-secondary text-white">
+            <i class="fa fa-sign-out" aria-hidden="true"></i> <span>Logout</span>
+          </a>
+        </ul>
+        
+      </aside>
